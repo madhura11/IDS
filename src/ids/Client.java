@@ -86,9 +86,9 @@ public class Client {
     * This method will send the packet to server
     * @param p This is the packet created by client
     */
-    void sendPacket(Packet p)
+    void sendPacket(Packet p)throws Exception
     {
-        Socket s1 = new Socket("localhost",1254);
+        Socket s1 = new Socket(IPAddr,6789);
         OutputStream s1out = s1.getOutputStream();
         ObjectOutputStream oos = new ObjectOutputStream(s1out);
         oos.writeObject(p);
