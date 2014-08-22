@@ -1043,7 +1043,12 @@ public class CreateSendPacket extends javax.swing.JFrame {
                 serror_rate_in,srv_serror_rate_in,rerror_rate_in,srv_rerror_rate_in,same_srv_rate_in,diff_srv_rate_in,srv_diff_host_rate_in,
                 dst_host_count_in,dst_host_srv_count_in,dst_host_same_srv_rate_in,dst_host_diff_srv_rate_in,dst_host_same_src_port_rate_in,
                 dst_host_srv_diff_host_rate_in,dst_host_serror_rate_in,dst_host_srv_serror_rate_in,dst_host_rerror_rate_in,dst_host_srv_rerror_rate_in);
-        c2.sendPacket(p1);
+        try
+        {
+            c2.sendPacket(p1);
+        }
+        catch(Exception e)
+        { }
     }//GEN-LAST:event_SendPacketActionPerformed
 
     /**
