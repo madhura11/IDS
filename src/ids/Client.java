@@ -5,6 +5,9 @@
  */
 
 package ids;
+import java.io.*;
+import java.util.*;
+import java.net.*;
 /**
  * This class represents the client
  * @author madhura phatak
@@ -85,6 +88,12 @@ public class Client {
     */
     void sendPacket(Packet p)
     {
-        
+        Socket s1 = new Socket("localhost",1254);
+        OutputStream s1out = s1.getOutputStream();
+        ObjectOutputStream oos = new ObjectOutputStream(s1out);
+        oos.writeObject(p);
+	oos.close();
+        s1out.close();
+ 	s1.close();
     }
 }

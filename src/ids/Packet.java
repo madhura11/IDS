@@ -116,50 +116,50 @@ public class Packet {
   * @param p The packet created by client and sent to server
   * @return Decoded packet to the server in a Linked List
   */
-  List decodePacket(Packet p)  
+  LinkedList decodePacket()  
   {
      LinkedList l = new LinkedList();
-     l.add(p.duration);
-     l.add(p.protocol_type);
-     l.add(p.service);
-     l.add(p.flag);
-     l.add(p.src_bytes);
-     l.add(p.dst_bytes);
-     l.add(p.land);
-     l.add(p.wrong_fragment);
-     l.add(p.urgent);
-     l.add(p.hot);
-     l.add(p.num_failed_logins);
-     l.add(p.logged_in);
-     l.add(p.num_compromised);
-     l.add(p.root_shell);
-     l.add(p.su_attempted);
-     l.add(p.num_root);
-     l.add(p.num_file_creations);
-     l.add(p.num_shells);
-     l.add(p.num_access_files);
-     l.add(p.num_outbound_cmds);
-     l.add(p.is_host_login);
-     l.add(p.is_guest_login);
-     l.add(p.count);
-     l.add(p.srv_count);
-     l.add(p.serror_rate);
-     l.add(p.srv_serror_rate);
-     l.add(p.rerror_rate);
-     l.add(p.srv_rerror_rate);
-     l.add(p.same_srv_rate);
-     l.add(p.diff_srv_rate);
-     l.add(p.srv_diff_host_rate);
-     l.add(p.dst_host_count);
-     l.add(p.dst_host_srv_count);
-     l.add(p.dst_host_same_srv_rate);
-     l.add(p.dst_host_diff_srv_rate);
-     l.add(p.dst_host_same_src_port_rate);
-     l.add(p.dst_host_srv_diff_host_rate);
-     l.add(p.dst_host_serror_rate);
-     l.add(p.dst_host_srv_serror_rate);
-     l.add(p.dst_host_rerror_rate);
-     l.add(p.dst_host_srv_rerror_rate);
+     l.add(this.duration);
+     l.add(this.protocol_type);
+     l.add(this.service);
+     l.add(this.flag);
+     l.add(this.src_bytes);
+     l.add(this.dst_bytes);
+     l.add(this.land);
+     l.add(this.wrong_fragment);
+     l.add(this.urgent);
+     l.add(this.hot);
+     l.add(this.num_failed_logins);
+     l.add(this.logged_in);
+     l.add(this.num_compromised);
+     l.add(this.root_shell);
+     l.add(this.su_attempted);
+     l.add(this.num_root);
+     l.add(this.num_file_creations);
+     l.add(this.num_shells);
+     l.add(this.num_access_files);
+     l.add(this.num_outbound_cmds);
+     l.add(this.is_host_login);
+     l.add(this.is_guest_login);
+     l.add(this.count);
+     l.add(this.srv_count);
+     l.add(this.serror_rate);
+     l.add(this.srv_serror_rate);
+     l.add(this.rerror_rate);
+     l.add(this.srv_rerror_rate);
+     l.add(this.same_srv_rate);
+     l.add(this.diff_srv_rate);
+     l.add(this.srv_diff_host_rate);
+     l.add(this.dst_host_count);
+     l.add(this.dst_host_srv_count);
+     l.add(this.dst_host_same_srv_rate);
+     l.add(this.dst_host_diff_srv_rate);
+     l.add(this.dst_host_same_src_port_rate);
+     l.add(this.dst_host_srv_diff_host_rate);
+     l.add(this.dst_host_serror_rate);
+     l.add(this.dst_host_srv_serror_rate);
+     l.add(this.dst_host_rerror_rate);
+     l.add(this.dst_host_srv_rerror_rate);
      return l;
    }
 
